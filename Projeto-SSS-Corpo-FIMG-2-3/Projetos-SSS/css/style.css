@@ -1,0 +1,172 @@
+/* Estilizacao Global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.interface{
+    margin: auto 4%;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background: rgb(165, 163, 163);
+    transition: 0.2s;
+    
+}
+
+
+/*Section Novidades*/
+
+section.novidades .interface .text{
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+section.novidades .interface .flex {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+section.novidades .interface .flex .images img{
+    border-radius: 15px;
+}
+
+section.novidades .interface .flex h3{
+      padding: 10px 0;
+      
+}
+
+section.novidades .button {
+    text-align: center;
+    margin: 80px 0;
+}
+
+section.novidades .button button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    border: solid 1px black;
+}
+
+/*Section Produtos*/
+
+section.produtos .interface .text{
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+section.produtos .interface .flex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+
+section.produtos .interface .flex .images img{
+    border-radius: 15px;
+}
+
+section.produtos .interface .flex h3{
+      padding: 10px 0;
+      
+}
+
+section.produtos .button {
+    text-align: center;
+    margin: 80px 0;
+}
+
+section.produtos .button button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    border: solid 1px black;
+}
+
+/*Estilizaçao Estilo*/
+
+section.estilo .interface .caixa{
+    background-color: rgb(0, 140, 255);
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 40px;
+    height: 600px;
+}
+
+section.estilo .interface .caixa .textcaixa{
+    padding: 40px;
+    color: white;
+}
+
+section.estilo .interface .caixa .conteudocima .flex{
+    justify-content: center;
+    gap: 20px;
+}
+
+
+section.estilo .interface .caixa .casual{
+    width: 350px;
+    height: 200px;
+    background-image: url("/img/download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+section.estilo .interface .caixa h3{
+    text-align: left;
+    padding: 20px;
+}
+
+section.estilo .interface .caixa .formal{
+    width: 700px;
+    height: 200px;
+    background-image: url("/img/download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.estilo .interface .caixa .conteudobaixo .flex{
+    justify-content: center;
+    gap: 20px;
+}
+
+section.estilo .interface .caixa .casa{
+    width: 700px;
+    height: 200px;
+    background-image: url("/img/download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+section.estilo .interface .caixa .piscina{
+    width: 350px;
+    height: 200px;
+    background-image: url("/img/download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
