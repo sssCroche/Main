@@ -1,0 +1,324 @@
+/* Estilizacao Global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.interface{
+    margin: auto 4%;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background: rgb(165, 163, 163);
+    transition: 0.2s;
+    
+}
+
+/* Header*/
+
+header .interface .flex{
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header .interface .logotipo nav ul li{
+   display: inline;
+  padding: 20px;
+}
+
+header .interface .logotipo nav ul{
+    list-style-type: none;
+    
+}
+
+header .interface .logotipo .nav-button button{
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+}
+
+header .interface .logotipo .nav-button button p{
+    justify-content: baseline;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+section.foto{
+    background: #21B0FE;
+}
+
+section.foto .interface .flex .lado-esquerdo{
+    width: 600px;
+    margin-top: 60px;
+}
+
+section.foto .interface .flex .lado-esquerdo h1{
+   color: #FED700;
+    font-size: 60px;
+}
+
+section.foto .interface .flex .lado-esquerdo p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0
+}
+
+section.foto .interface .flex .lado-esquerdo button{
+    background: #F9039C;
+   margin-top: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;   
+}
+
+section.foto .interface .flex .lado-esquerdo button p{
+    color:#FED700 ;
+}
+
+section.foto .interface .flex .lado-direito .imgbolsas{
+    width: 200px;
+    
+}
+
+section.foto .interface .flex .lado-esquerdo .imgpessoa{
+    width: 50px;
+}
+
+
+/*Section Novidades*/
+
+section.novidades .interface .text{
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+
+section.novidades .interface .flex {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+section.novidades .interface .flex .images img{
+    border-radius: 15px;
+    width: 280px;
+    height: 300px;
+    border: #21b1fe31 solid 2px;
+}
+
+section.novidades .interface .flex .images button{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+    border: solid 2px #21B0FE;
+}
+
+section.novidades .interface .flex .images button:hover{
+    background: #FED700;
+}
+
+section.novidades .interface .flex h3{
+      padding: 10px 0;
+      
+}
+
+section.novidades .button {
+    text-align: center;
+    margin: 80px 0;
+}
+
+section.novidades .button button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    border: solid 1px black;
+}
+
+/*Section Produtos*/
+
+section.produtos .interface .text{
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+section.produtos .interface .flex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+
+section.produtos .interface .flex .images img{
+    border-radius: 15px;
+}
+
+section.produtos .interface .flex h3{
+      padding: 10px 0;
+      
+}
+
+section.produtos .button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.produtos .button button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    border: solid 1px black;
+}
+
+
+/*Avaliacoes*/
+
+section.avaliacoes .interface .text-avaliacao .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.avaliacoes .interface .text-avaliacao .flex h1{
+    padding: 40px 0 ;
+    font-size: 40px;
+}
+
+section.avaliacoes .interface .flex{
+    gap: 40px;
+}
+
+section.avaliacoes .interface .flex .box-comentario{
+    width: 400px;
+    border: solid rgba(75, 77, 75, 0.548) 1px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;  
+}
+
+section.avaliacoes .interface .flex .box-comentario h3{
+    margin: 10px 0;
+}
+
+/*Contato */
+
+section.contato .interface {
+    background: #FFC633;
+   margin-top: 40px;
+   border-radius: 10px;
+}
+
+section.contato .interface .flex{
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: auto;
+    padding: 30px 0 30px 0;
+   
+}
+
+section.contato .interface .flex h1{
+    color: white;
+    font-size: 50px;
+    width: 600px;
+}
+
+
+section.contato .interface .flex .buttons-contato button{
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+section.contato .interface .flex .buttons-contato .button-escreva p{
+    align-items: center;
+    display: flex;
+    gap: 18px;
+}
+
+section.contato .interface .flex .buttons-contato .button-baixo{
+    margin-top: 20px;
+}
+
+/*Texto Sobremim */
+
+section.sobremim{
+    background: #21B0FE;
+    margin-top: 60px;
+}
+
+section.sobremim .interface .flex{
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobremim h2{
+    color: white;
+    font-size: 60px;
+}
+
+section.sobremim .interface .flex p{
+    font-size: 25px;
+    padding: 15px 0;
+    color: white;
+    width: 600px;
+}
+
+section.sobremim .interface .flex img{
+    width: 300px;
+    height: 380px;
+}
+
+
+/*footer */
+
+footer .footer {
+    background-color: #F9039C;
+    margin-top: 25px;
+}
+
+footer .footer .flex{
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+footer .footer .flex .redesociais .flex {
+    gap: 20px;
+}
+
+footer .footer .flex .redesociais .flex img{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
