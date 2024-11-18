@@ -1,0 +1,528 @@
+/* Estilizacao Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface {
+    margin: auto 4%;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background: rgb(165, 163, 163);
+    transition: 0.2s;
+
+}
+
+.button-global {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+    border: solid 2px var(--azul-claro);
+}
+
+.button-global:hover {
+    background: var(--amarelo);
+}
+
+/* Header*/
+
+
+header .interface{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+header .interface .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .interface .logotipo nav.desktop ul li {
+    display: inline;
+    padding: 20px;
+}
+
+header .interface .logotipo nav.desktop ul {
+    list-style-type: none;
+}
+
+header .interface .logotipo nav.desktop ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header .interface .logotipo .nav-button button {
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+    cursor: text;
+}
+
+header .interface .logotipo .nav-button button p {
+    justify-content: baseline;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 15px;
+} */
+
+.menu img {
+    width: 30px;
+}
+
+.menu .margin-img {
+   display: none;
+}
+
+/*Estilos do Menu Mobile */
+
+.menu-mobile{
+    background: var(--amarelo-ouro);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition:.2s; 
+    
+}
+
+.menu-mobile.abrir-menu{
+    width: 50%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar img{
+    width: 40px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 30px 8%;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:var(--azul-claro) ;
+    color: var(--preto);
+}
+
+.overlay-menu{
+    background-color:rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
+/*Section Inicio-foto*/
+
+section.foto {
+    background: var(--azul-claro);
+    background-position-x:right;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    background-image: url(../img/img-paginaPrincipal/imagemDeBolsas.jpeg);
+}
+
+section.foto .interface .flex-x{
+    display: flex;
+}
+
+section.foto .interface .flex-x .lado-esquerdo {
+    width: 50%;
+    margin-top: 60px;
+}
+
+section.foto .interface .flex-x .lado-esquerdo h1 {
+    color: var(--amarelo);
+    font-size: 60px;
+}
+
+section.foto .interface .flex-x .lado-esquerdo p {
+    color: var(--branco);
+    font-size: 18px;
+    margin: 20px 0
+}
+
+section.foto .interface .flex-x .lado-esquerdo button {
+    background: var(--rosa-choque);
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+}
+
+section.foto .interface .flex-x {
+    gap: 50px;
+}
+
+section.foto .interface .flex-x .lado-esquerdo button p {
+    color: var(--amarelo);
+}
+
+section.foto .interface .flex-x .lado-direito{
+    width: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    
+    background-position-x: center;
+    background-size: cover;
+}
+
+/*Section Novidades*/
+
+section.novidades .interface .text {
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+
+section.novidades .interface .flex {
+    justify-content: space-between;
+}
+
+section.novidades .interface .flex .images img {
+    border-radius: 15px;
+    width: 280px;
+    height: 300px;
+    border: #21b1fe31 solid 2px;
+    transition: transform 0.3s ease-in-out;
+    cursor: text;
+}
+
+section.novidades .interface .flex .images img:hover {
+    transform: scale(1.1);
+}
+
+
+
+section.novidades .interface .flex h3 {
+    padding: 10px 0;
+
+}
+
+section.novidades .button {
+    text-align: center;
+    margin: 80px 0;
+}
+
+
+/*Section Produtos*/
+
+section.produtos .interface .text {
+    text-align: center;
+    padding: 40px;
+    font-size: 24px;
+}
+
+section.produtos .interface .flex {
+    justify-content: space-between;
+}
+
+section.produtos .interface .margin-produtos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.produtos .interface .flex .images img {
+    border-radius: 15px;
+    width: 280px;
+    height: 300px;
+    border: #21b1fe31 solid 2px;
+    transition: transform 0.3s ease-in-out;
+    cursor: text;
+}
+
+section.produtos .interface .flex .images img:hover {
+    transform: scale(1.1);
+}
+
+section.produtos .interface .flex h3 {
+    padding: 10px 0;
+
+}
+
+section.produtos .button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.produtos .button button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    border: solid 1px black;
+}
+
+/*Avaliacoes*/
+
+section.avaliacoes .interface .text-avaliacao .flex-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.avaliacoes .interface .text-avaliacao .flex-text h1 {
+    padding: 40px 0;
+    font-size: 40px;
+}
+
+section.avaliacoes .interface .flex {
+    gap: 40px;
+    justify-content: center;
+}
+
+section.avaliacoes .interface .flex .box-comentario {
+    border: solid rgba(75, 77, 75, 0.548) 1px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+section.avaliacoes .interface .flex .box-comentario h3 {
+    margin: 10px 0;
+}
+
+/*Contato */
+
+section.contato .interface {
+    background: var(--amarelo-ouro);
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+section.contato .interface .flex {
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 30px 0 30px 0;
+
+}
+
+section.contato .interface .flex h1 {
+    color: var(--branco);
+    font-size: 50px;
+    width: 600px;
+}
+
+
+section.contato .interface .flex .buttons-contato button {
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+section.contato .interface .flex .buttons-contato .button-escreva p {
+    align-items: center;
+    display: flex;
+    gap: 18px;
+}
+
+section.contato .interface .flex .buttons-contato .button-baixo {
+    margin-top: 20px;
+}
+
+/*Texto Sobremim */
+
+section.sobremim {
+    background: var(--azul-claro);
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+section.sobremim .interface .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobremim h2 {
+    color: var(--branco);
+    font-size: 60px;
+}
+
+section.sobremim .interface .flex p {
+    font-size: 25px;
+    padding: 15px 0;
+    color: var(--branco);
+    width: 600px;
+}
+
+section.sobremim .interface .flex img {
+    width: 300px;
+    height: 380px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+
+/*footer */
+
+footer .footer {
+    background-color: var(--rosa-choque);
+    margin-top: 25px;
+}
+
+footer .footer .flex {
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+footer .footer .flex .redesociais .flex {
+    gap: 20px;
+}
+
+footer .footer .flex .redesociais .flex img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* WPP - VOLTAR - MODAL */
+.btn-wpp a {
+    background: var(--txOrange);
+    padding: 10px 20px;
+    border-radius: 100%;
+    box-shadow: -2px 10px 10px var(--txGrayBlack);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    font-size: 40px;
+    color: var(--bgWhite);
+    animation: animate-wpp infinite alternate-reverse 1s;
+    z-index: 2000;
+  }
+  .pop-up {
+    display: flex;
+    transform: translateY(0);
+    transition: .3s;
+    opacity: 1;
+  }
+  .pop-up-on {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+@media screen and (max-width: 1280px){
+    
+    section.novidades .interface .flex .images{
+        padding: 20px;
+    }
+
+    section.produtos .interface .flex .images{
+        padding: 20px;
+    }
+    
+    .flex{
+        flex-wrap: wrap;
+    }
+
+    .interface{
+        margin: auto 10%;
+    }
+}
+
+@media screen and (max-width: 950px){
+  
+    section.foto .interface .flex-x{
+        justify-content: center;
+        text-align: center;
+       gap: 0;
+    }
+
+    section.foto .interface .flex-x .lado-esquerdo{
+        width: 600px;
+    }
+
+
+    .lado-direito{ 
+        display: none;
+        background-image: none !important;
+    }
+}
+
+@media screen and (max-width: 817px){
+
+    nav.desktop{
+        display: none;
+    }
+
+    .menu #margin-img{
+        display: inline;
+    }
+
+    section.novidades .interface .flex {
+        justify-content: center;
+    }
+
+    section.produtos .interface .flex{
+        justify-content: center;
+    }
+
+    section.produtos .interface .flex .remover{
+        display: none;
+    }
+
+    section.produtos .interface .flex .images {
+       align-items: center;
+    }
+
+    section.contato .interface .flex h1{
+       text-align: center;
+    }
+
+    section.sobremim .interface .flex{
+        text-align: center;
+    }
+
+    section.sobremim .interface h2{
+        text-align: center;
+    }
+
+    footer h2{
+        padding: 0 15px;
+    }
+
+    footer .redesociais .flex{
+        height: 40px;
+    }
+    
+}
+    

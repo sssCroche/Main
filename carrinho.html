@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/var.css">
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="flex">
+                <div class="logo"><img src="img/img-Carrinho/logo.png" alt=""></div><!--logo-->
+                <nav>
+                    <a href="#">Novidades</a>
+                    <a id="margin-text" href="#">Descontos</a>
+                    <a href="#">Produtos</a>
+                </nav>
+                <div class="icons">
+                    <a href="index.html"><img src="img/img-Carrinho/seta-esquerda.png" alt=""></a>
+                    <img src="img/img-Carrinho/list.svg" alt="" id="margin-img">
+                </div><!--icons-->
+
+            </div><!--flex-->
+        </div><!--interface-->
+
+    </header>
+
+    <hr id="linha-cor">
+
+    <main>
+        <section class="produtos">
+            <div class="interface">
+                <h1>Meu Carrinho</h1>
+                <span class="notificacao"><i class="fa-regular fa-bell"></i></span>
+            </div>
+
+            <div class="conteudo"></div>
+
+            <!-- <div class="interface-produtos">
+                <div class="flex">
+                    <div class="produto-img">
+                        <img src="img/img-Carrinho/logo.png" alt="">
+                    </div>
+                    <div class="text-colum">
+                        <p>Produto</p>
+                        <p>Bolsa Margarida</p>
+                    </div>
+                    <div class="text-colum">
+                        <p>Preço</p>
+                        <p>R$60,00</p>
+                    </div>
+                    <div class="text-colum">
+                        <p>Quantidade</p>
+                        <p>MUDAR PARA(QUANTOS VAI COMPRAR!)</p>
+                    </div>
+                    <div class="text-colum">
+                        <p>Total</p>
+                        <p>R$120,00</p>
+                    </div>
+
+                    <div class="icon-lixeira">
+                        <p><img src="img/img-Carrinho/trash.svg" alt=""></p>
+                    </div>
+
+                </div>
+            </div> -->
+        </section>
+
+        <div class="subtotal">
+            <p>Subtotal: <span>R$ 0,00</span></p>
+        </div>
+        <!-- <section class="preco-total">
+            <div class="interface">
+                <div class="flex">
+                    <p>Subtotal:</p>
+                    <p>R$0,00</p>
+                </div>
+            </div><
+        </section> -->
+
+        <div class="resumo-cep">
+            <div class="resumo cep">
+                <div>
+                    <h3>CEP</h3>
+                    <input class="input-style" type="text" name="cep" id="cep" placeholder="CEP">
+
+                    <div id="conteudo" class="conteudo">
+
+                    </div>
+                    <input id="botao-cep" class="botao-comprar" type="button" value="Buscar CEP">
+                </div>
+            </div>
+
+            <section class="resumo">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="colum">
+
+                            <h3>Resumo</h3>
+                            <hr>
+                            <div class="flex-text">
+                                <p class="valor-produtos">Valor: <span class="text-end">R$240,00</span></p>
+                            </div><!--flex-text-->
+                            <hr>
+                            <div class="flex-text">
+                                <p class="frete">Frete: <span class="text-end">000,000</span></p>
+                            </div><!--flex-text-->
+                            <hr>
+                            <div class="flex-text">
+                                <p class="Total">Total: <span class="text-end"> 000,000</span></p>
+                            </div><!--flex-text-->
+                            <div class="button"><button>Comprar</button></div><!--button-->
+                        </div><!--colum-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--resumo-->
+    </main>
+    <div class="pop-up-on"></div>
+
+    <script src="js/carrinho.js"></script>
+
+</body>
+
+</html>
