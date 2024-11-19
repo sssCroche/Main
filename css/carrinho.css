@@ -56,7 +56,12 @@
                         & img {
                             width: 70px;
                         }
-
+                        & .remover {
+                            cursor: pointer;
+                            border: none;
+                            background-color: #fff;
+                            padding: 5px;
+                        }
                         & .controle {
                             display: flex;
                             gap: 4px;
@@ -82,3 +87,4 @@
         }
     }
 }
+
