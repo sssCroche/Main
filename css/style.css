@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .interface {
@@ -38,7 +39,6 @@
 }
 
 /* Header*/
-
 
 header .interface{
     margin-bottom: 20px;
@@ -484,8 +484,9 @@ footer .footer .flex .redesociais .flex img {
         display: none;
     }
 
-    .menu #margin-img{
+    .menu .margin-img{
         display: inline;
+        margin-left: 20px;
     }
 
     section.novidades .interface .flex {
