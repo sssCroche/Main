@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/img-paginaPrincipal/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/var.css">
-    <meta name="description" content="Site e-comerce de produtos de croche destinado ao publico feminino, produzido para projeto de extensão da faculdade flamingo.">
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <meta name="description"
+        content="Site e-comerce de produtos de croche destinado ao publico feminino, produzido para projeto de extensão da faculdade flamingo.">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="Crochê, e-comerce e SSSCrochê">
@@ -33,30 +35,27 @@
                     </ul>
                 </nav>
 
-                <div class="menu" >
-                    <a href="carrinho.html"><img src="img/img-paginaPrincipal/cart.svg" alt=""></a>
+                <div class="menu">
+                    <div class="carrinho-compra">
+                        <img src="img/img-paginaPrincipal/cart.svg" alt="">
+                    </div>
+                    <div class="carrinho">
+                        <h2>Carrinho de compra</h2>
+
+                        <div class="cards">
+
+                        </div>
+
+                        <div class="total-cep">
+                            <div>cep</div>
+                            <div>compra</div>
+                        </div>
+                    </div>
                     <img src="img/img-paginaPrincipal/list.svg" alt="" class="margin-img" id="btn-menu">
                 </div><!--menu-->
 
             </div><!--flex-->
         </div><!--logotipo-->
-
-        <div class="menu-mobile" id="menu-mobile">
-            <div class="btn-fechar">
-                <img src="img/img-paginaPrincipal/close.svg" alt="">
-            </div><!--btn-fechar-->
-            <nav>
-                <ul>
-                    <li><a href="#novidades">Novidades</a></li>
-                    <!-- <li><a href="#produtos">Descontos</a></li> -->
-                    <li><a href="#produtos">Produtos</a></li>
-                </ul>
-            </nav>
-
-        </div><!--menu-mobile-->
-        <div class="overlay-menu" id="overlay-menu">
-
-        </div><!--overlay-menu-->
 
     </div><!--interface-->
 </header>
@@ -88,10 +87,10 @@
 
     <main>
 
-       <section class="novidades">
+        <section class="novidades">
             <div class="interface">
                 <div class="text">
-                    <h1 id="novidades">NOVIDADES</h1> 
+                    <h1 id="novidades">NOVIDADES</h1>
                 </div><!--text-->
 
                 <div class="flex">
@@ -122,15 +121,12 @@
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa12-removebg-preview.png"
                             alt="Bolsa feita de croche vermelho branco e preto, com alça na cor vermelha">
-                            <h3>Bolsa Listrada(28x25, 200g)</h3>
-                            <P>R$80,00</P>
+                        <h3>Bolsa Listrada(28x25, 200g)</h3>
+                        <P>R$80,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
-
-
-                <hr>
 
             </div><!--interface-->
         </section><!--novidades-->
@@ -176,7 +172,7 @@
 
                 </div><!--flex-->
 
-                <div class="flex margin-produtos"  id="conteudo-extra01" style="display: none;">
+                <div class="flex margin-produtos" id="conteudo-extra01" style="display: none;">
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa05-removebg-preview.png"
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
@@ -188,24 +184,24 @@
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa06-removebg-preview.png"
                             alt="Bolsa inteiramente feita com croche colorido">
-                            <h3>Ecobag (40x35)</h3>
-                            <P>R$155,00</P>
+                        <h3>Ecobag (40x35)</h3>
+                        <P>R$155,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa07-removebg-preview.png"
                             alt="Bolsa feita de croche em quadriculado nas cores laranja-avermelhado e amarelo claro, com alça laranja-avermelhado">
-                            <h3>Bolsa de quadradinhos (23×19, 115g)</h3>
-                            <P>R$105,00</P>
+                        <h3>Bolsa de quadradinhos (23×19, 115g)</h3>
+                        <P>R$105,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa08-removebg-preview.png"
                             alt="Nécessarie feito com croche azul com detalhe de bolinha">
-                            <h3>Necessaire(24x17, 145g)</h3>
-                            <P>R$40,00</P>
+                        <h3>Necessaire(24x17, 145g)</h3>
+                        <P>R$40,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
@@ -239,8 +235,8 @@
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa12-removebg-preview.png"
                             alt="Bolsa feita de croche na cor vermelho branco e preto, com alça na cor vermelha">
-                            <h3>Bolsa Listrada(28x25, 200g)</h3>
-                            <P>R$80,00</P>
+                        <h3>Bolsa Listrada(28x25, 200g)</h3>
+                        <P>R$80,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
@@ -250,14 +246,13 @@
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/BolsaVerdeEstrela(SemBorda).png"
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
-                            <h3>Bolsa de Estrelas(35x28, 270g)</h3>
-                            <P>R$140,00</P>
+                        <h3>Bolsa de Estrelas(35x28, 270g)</h3>
+                        <P>R$140,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
-                        <img src="img/imagens-da-bolsa-main/bolsa10-removebg-preview.png"
-                            alt=>
+                        <img src="img/imagens-da-bolsa-main/bolsa10-removebg-preview.png" alt=>
                         <h3>Bolsa estrela (32×28, 180g)</h3>
                         <P>R$75,00</P>
                         <input class="botao-comprar-produto" type="button" value="Comprar">
@@ -308,26 +303,28 @@
                 <div class="flex">
                     <div class="box-comentario">
                         <img src="img/img-paginaPrincipal/estrelas.png" alt="">
-                        <h3>Comentario 1 <img src="img/verificado.png" alt=""></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tenetur natus harum eos
-                            nam in unde mollitia quae, et, amet consequuntur nostrum soluta eligendi, rerum
-                            exercitationem odit dolorum atque quaerat?</p>
+                        <h3>Stephany Marciano Diaz <img src="img/img-paginaPrincipal/verificado.png" alt=""></h3>
+                        <p>Acabei de receber minha bolsa e estou apaixonada! A entrega foi super rápida, e o produto é
+                            ainda mais bonito pessoalmente. O design artesanal é impecável, super confortável de usar e
+                            perfeito para o dia a dia. Com certeza, recomendo a SSSCrochê!</p>
                     </div><!--box-comentario-->
 
                     <div class="box-comentario">
                         <img src="img/img-paginaPrincipal/estrelas.png" alt="">
-                        <h3>Comentario 1 <img src="img/verificado.png" alt=""></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tenetur natus harum eos
-                            nam in unde mollitia quae, et, amet consequuntur nostrum soluta eligendi, rerum
-                            exercitationem odit dolorum atque quaerat?</p>
+                        <h3>Allan Pereira<img src="img/img-paginaPrincipal/verificado.png" alt=""></h3>
+                        <p> Comprei uma bolsa da SSSCrochê para usar na academia. Fiquei impressionado com a qualidade!
+                            A bolsa é resistente, prática e confortável de carregar. Além disso, o design é bonito e
+                            funcional, cabendo tudo o que preciso para o treino. Recomendo tanto pela utilidade quanto
+                            pelo estilo.</p>
                     </div><!--box-comentario-->
 
                     <div class="box-comentario">
                         <img src="img/img-paginaPrincipal/estrelas.png" alt="">
-                        <h3>Comentario 1 <img src="img/img-paginaPrincipal/verificado.png" alt=""></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tenetur natus harum eos
-                            nam in unde mollitia quae, et, amet consequuntur nostrum soluta eligendi, rerum
-                            exercitationem odit dolorum atque quaerat?</p>
+                        <h3>Maria Silva<img src="img/img-paginaPrincipal/verificado.png" alt=""></h3>
+                        <p>A entrega foi pontual, e o produto superou minhas expectativas. A bolsa possui um acabamento
+                            impecável, evidenciando o cuidado e a habilidade no trabalho artesanal. Além de elegante, é
+                            funcional e confortável, atendendo perfeitamente às minhas necessidades diárias. Recomendo a
+                            SSSCrochê a todos que valorizam qualidade e bom gosto.</p>
                     </div><!--box-comentario-->
 
                 </div><!--flex-->
@@ -359,7 +356,8 @@
                 <div class="flex">
                     <p>Oi, gente! Sou a Sofia, estudante de Pedagogia, apaixonada por gatos e pelo universo do crochê.
                         Desde os 19 anos, transformo fios em bolsas únicas e cheias de personalidade.
-
+                        <br>
+                        <br>
                         No SSSCrochê, você encontra bolsas feitas com muito carinho e dedicação, perfeitas para te
                         acompanhar em qualquer ocasião. Se você busca algo especial e personalizado, para presentear
                         alguém ou se presentear, entre em contato!</p>
@@ -382,9 +380,14 @@
                 </div><!--email-->
                 <div class="redesociais">
                     <div class="flex">
-                        <img src="img/img-paginaPrincipal/instagram.svg" alt="icone da redesocial instagram">
-                        <img src="img/img-paginaPrincipal/tiktok.svg" alt="icone da redesocial tiktok">
-                        <img src="img/img-paginaPrincipal/whatsapp.svg" alt="icone da redesocial whatsapp">
+                        <a href="https://www.instagram.com/croche.sss?igsh=MW5la2lnNGMxZWJ0dg%3D%3D"
+                            target="_blank"><img src="img/img-paginaPrincipal/instagram.svg"
+                                alt="icone da redesocial instagram"></a>
+                        <a href="https://www.tiktok.com/@sra_htk?_t=8qttpqEJwP7&_r=1" target="_blank"><img
+                                src="img/img-paginaPrincipal/tiktok.svg" alt="icone da redesocial tiktok"></a>
+                        <a href="https://api.whatsapp.com/message/UAJYNWZFHMQYC1?autoload=1&app_absent=0"
+                            target="_blank"><img src="img/img-paginaPrincipal/whatsapp.svg"
+                                alt="icone da redesocial whatsapp"></a>
                     </div><!--flex-->
                 </div><!--redesociais-->
             </div><!--flex-->
@@ -392,14 +395,14 @@
     </footer>
 
     <div class="btn-wpp">
-        <a href="https://wa.me/5511984481182?text=Gostaria%20de%20fazer%20um%20pedido!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://wa.me/5511984481182?text=Gostaria%20de%20fazer%20um%20pedido!" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i></a>
     </div>
     <div class="pop-up-on"></div>
-    
+
     <script src="js/carrinho.js"></script>
     <script src="js/botaoVermais.js"></script>
     <script src="js/menu.js" defer></script>
-
 </body>
 
 </html>
