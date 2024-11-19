@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/carrinho.css">
     <link rel="stylesheet" href="css/var.css">
-    <title>Carrinho</title>
+    <link rel="shortcut icon" href="img/img-paginaPrincipal/logo.png" type="image/x-icon">
+    <title>SSSCrochê</title>
 </head>
 
 <body>
@@ -15,13 +16,11 @@
             <div class="flex">
                 <div class="logo"><img src="img/img-Carrinho/logo.png" alt=""></div><!--logo-->
                 <nav>
-                    <a href="#">Novidades</a>
-                    <a id="margin-text" href="#">Descontos</a>
-                    <a href="#">Produtos</a>
+                    <a class="nav-link" href="index.html#novidades">Novidades</a>
+                    <a class="nav-link" href="index.html#produtos">Produtos</a>
                 </nav>
                 <div class="icons">
                     <a href="index.html"><img src="img/img-Carrinho/seta-esquerda.png" alt=""></a>
-                    <img src="img/img-Carrinho/list.svg" alt="" id="margin-img">
                 </div><!--icons-->
 
             </div><!--flex-->
@@ -86,7 +85,8 @@
             <div class="resumo cep">
                 <div>
                     <h3>CEP</h3>
-                    <input class="input-style" type="text" name="cep" id="cep" placeholder="CEP">
+                    <input class="input-style" type="text" name="cep" id="cep" placeholder="CEP" maxlength="9"
+                        pattern="\d{5}-\d{3}">
 
                     <div id="conteudo" class="conteudo">
 
@@ -103,17 +103,17 @@
                             <h3>Resumo</h3>
                             <hr>
                             <div class="flex-text">
-                                <p class="valor-produtos">Valor: <span class="text-end">R$240,00</span></p>
+                                <p class="valor-produtos">Valor: <span class="text-end">R$0,00</span></p>
                             </div><!--flex-text-->
                             <hr>
                             <div class="flex-text">
-                                <p class="frete">Frete: <span class="text-end">000,000</span></p>
+                                <p class="frete">Frete: <span class="text-end">R$0,00</span></p>
                             </div><!--flex-text-->
                             <hr>
                             <div class="flex-text">
-                                <p class="Total">Total: <span class="text-end"> 000,000</span></p>
+                                <p class="Total">Total: <span class="text-end">R$0,00</span></p>
                             </div><!--flex-text-->
-                            <div class="button"><button>Comprar</button></div><!--button-->
+                            <input id="finalizar-pedido" class="botao-comprar" type="button" value="Comprar"><!--button-->
                         </div><!--colum-->
                     </div><!--flex-->
                 </div><!--interface-->

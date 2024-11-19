@@ -158,13 +158,10 @@ section.resumo .interface .flex .colum .button button {
 
 .resumo-cep {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
-
-/* Resumo do CEP */
-
 .resumo-cep .cep .input-style {
     width: 354px;
     outline: none;
@@ -176,13 +173,8 @@ section.resumo .interface .flex .colum .button button {
     color: var(--preto);
     font-weight: 400;
     letter-spacing: 14.8px;
-}
-
-.resumo-cep .cep {
-    width: 100px;
-    letter-spacing: 2px;
-    padding: 4px;
-}
+    
+  }
 
 /* Card Produtos */
 .conteudo .card-produto {
@@ -339,7 +331,7 @@ section.resumo .interface .flex .colum .button button {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background: var(--t);
+    
 }
 
 .subtotal p {
@@ -408,34 +400,16 @@ section.resumo .interface .flex .colum .button button {
     height: 55px;
     padding: 6px 19px;
     border-radius: 6px;
+    margin-top: 1em;
+    background-color: var(--rosa-choque);
 }
-
-.resumo-cep{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .resumo-cep .cep .input-style {
-    width: 354px;
-    outline: none;
-    border: none;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    border-radius: 4pFx;
-    padding: 15px 34px;
-    font-size: 18px;
-    color: var(--preto);
-    font-weight: 400;
-    letter-spacing: 14.8px;
-  }
-
-  .resumo-cep .cep .pequeno {
-    width: 100px;
-    letter-spacing: 2px;
-    padding: 4px;
-  }
-
+.botao-comprar:hover{
+    cursor: pointer;
+}
+.nav-link{
+   margin-left: 1em;
+   background-color: red;
+}
   /* pop- up */
   .pop-up-on {
     display: flex;

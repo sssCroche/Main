@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/img-paginaPrincipal/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/var.css">
+    <meta name="description" content="Site e-comerce de produtos de croche destinado ao publico feminino, produzido para projeto de extensão da faculdade flamingo.">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Crochê, e-comerce e SSSCrochê">
+    <meta name="author" content="Giovanni Santos, Hernando Silva e Vitor Cutrin">
 
 </head>
 
@@ -22,15 +27,15 @@
 
                 <nav class="desktop">
                     <ul>
-                        <li><a href="#">Novidades</a></li>
-                        <li><a href="#">Descontos</a></li>
-                        <li class="list"><a href="#">Produtos</a></li>
+                        <li><a href="#novidades">Novidades</a></li>
+                        <!-- <li><a href="#produtos">Descontos</a></li> -->
+                        <li class="list"><a href="#produtos">Produtos</a></li>
                     </ul>
                 </nav>
 
-                <div class="menu" id="btn-menu">
+                <div class="menu" >
                     <a href="carrinho.html"><img src="img/img-paginaPrincipal/cart.svg" alt=""></a>
-                    <img src="img/img-paginaPrincipal/list.svg" alt="" id="margin-img">
+                    <img src="img/img-paginaPrincipal/list.svg" alt="" class="margin-img" id="btn-menu">
                 </div><!--menu-->
 
             </div><!--flex-->
@@ -42,9 +47,9 @@
             </div><!--btn-fechar-->
             <nav>
                 <ul>
-                    <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Descontos</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#novidades">Novidades</a></li>
+                    <!-- <li><a href="#produtos">Descontos</a></li> -->
+                    <li><a href="#produtos">Produtos</a></li>
                 </ul>
             </nav>
 
@@ -83,43 +88,43 @@
 
     <main>
 
-        <section class="novidades">
+       <section class="novidades">
             <div class="interface">
                 <div class="text">
-                    <h1>NOVIDADES</h1>
+                    <h1 id="novidades">NOVIDADES</h1> 
                 </div><!--text-->
 
                 <div class="flex">
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/BolsaVerdeEstrela(SemBorda).png"
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
-                        <h3>Bolsa de Estrelas</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <h3>Bolsa de Estrelas(35x28, 270g)</h3>
+                        <P>R$140,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa06-removebg-preview.png"
                             alt="Bolsa inteiramente feita com croche colorido">
-                        <h3>Produto 2</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <h3>Ecobag (40x35)</h3>
+                        <P>R$155,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa08-removebg-preview.png"
                             alt="Nécessarie feito com croche azul com detalhe de bolinha">
-                        <h3>Produto 3</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <h3>Necessaire(24x17, 145g)</h3>
+                        <P>R$40,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa12-removebg-preview.png"
                             alt="Bolsa feita de croche vermelho branco e preto, com alça na cor vermelha">
-                        <h3>Produto 4</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                            <h3>Bolsa Listrada(28x25, 200g)</h3>
+                            <P>R$80,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
@@ -133,7 +138,7 @@
         <section class="produtos">
             <div class="interface">
                 <div class="text">
-                    <h1>PRODUTOS</h1>
+                    <h1 id="produtos">PRODUTOS</h1>
                 </div><!--text-->
 
                 <div class="flex">
@@ -142,7 +147,7 @@
                             alt="Bolsa feita de croche na cor verelha e com alça na cor vermelha">
                         <h3>Produto 1</h3>
                         <P>R$3,000zzz</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -151,7 +156,7 @@
                         <h3>Produto 2</h3>
                         <span> Star</span>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -159,7 +164,7 @@
                             alt="Bolsa feita de croche na cor lilas com alça na cor lilas">
                         <h3>Produto 3</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -167,7 +172,7 @@
                             alt="Bolsa feita de croche na cor verde-água com detalhes de folres margaridas, e com alça na cor verde-água">
                         <h3>Produto 4</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
@@ -178,31 +183,31 @@
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
                         <h3>Bolsa de Estrelas</h3>
                         <P>R$3,000ssss</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa06-removebg-preview.png"
                             alt="Bolsa inteiramente feita com croche colorido">
-                        <h3>Produto 2</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                            <h3>Ecobag (40x35)</h3>
+                            <P>R$155,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa07-removebg-preview.png"
                             alt="Bolsa feita de croche em quadriculado nas cores laranja-avermelhado e amarelo claro, com alça laranja-avermelhado">
-                        <h3>Produto 3</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                            <h3>Produto 3</h3>
+                            <P>R$3,000</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/bolsa08-removebg-preview.png"
                             alt="Nécessarie feito com croche azul com detalhe de bolinha">
-                        <h3>Produto 4</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                            <h3>Necessaire(24x17, 145g)</h3>
+                            <P>R$40,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
@@ -213,7 +218,7 @@
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
                         <h3>Bolsa de Estrelas</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -221,7 +226,7 @@
                             alt="Bolsa feita de croche na cor vinho, com alça na cor vinho">
                         <h3>Produto 2</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -229,7 +234,7 @@
                             alt="Bolsa feita com croche na cor cinza no formato de hexágono com alça cinza">
                         <h3>Produto 3</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -237,7 +242,7 @@
                             alt="Bolsa feita de croche na cor vermelho branco e preto, com alça na cor vermelha">
                         <h3>Produto 4</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
@@ -246,9 +251,9 @@
                     <div class="images">
                         <img src="img/imagens-da-bolsa-main/BolsaVerdeEstrela(SemBorda).png"
                             alt="Bolsa verde Com detalhes de estrelas feita em croche">
-                        <h3>Bolsa de Estrelas</h3>
-                        <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                            <h3>Bolsa de Estrelas(35x28, 270g)</h3>
+                            <P>R$140,00</P>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images">
@@ -256,7 +261,7 @@
                             alt=>
                         <h3>Produto 2</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images remover" style="visibility: hidden;">
@@ -264,7 +269,7 @@
                             alt="Bolsa feita com croche na cor cinza no formato de hexágono com alça cinza">
                         <h3>Produto 3</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                     <div class="images remover" style="visibility: hidden;">
@@ -272,7 +277,7 @@
                             alt="Bolsa feita de croche na cor vermelho branco e preto, com alça na cor vermelha">
                         <h3>Produto 4</h3>
                         <P>R$3,000</P>
-                        <button class="button-global">Compre Agora!</button>
+                        <input class="botao-comprar-produto" type="button" value="Comprar">
                     </div><!--images-->
 
                 </div><!--flex-->
@@ -359,7 +364,7 @@
                         No SSSCrochê, você encontra bolsas feitas com muito carinho e dedicação, perfeitas para te
                         acompanhar em qualquer ocasião. Se você busca algo especial e personalizado, para presentear
                         alguém ou se presentear, entre em contato!</p>
-                    <img src="img/img-paginaPrincipal/fotomozao.png" alt="">
+                    <img src="img/img-paginaPrincipal/DonaDoSite.jpeg" alt="">
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--sobremim-->

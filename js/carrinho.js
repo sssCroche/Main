@@ -1,5 +1,7 @@
 let valorCompra = 0
 const frete = 5
+let bolsas = []
+let quantidades = []
 
 // Objeto dados Usuário para encaminhar wpp
 let dadosUsuarioCep = {
@@ -11,40 +13,42 @@ let dadosUsuarioCep = {
 };
 
 const buscaCep = () => {
-    const cepInput = doument.querySelector("#cep").value;
+    const cepInput = document.querySelector("#cep").value;
     const resumoCep = document.querySelector("#conteudo");
 
     const cep = `${cepInput}`;
-    const API = `https://viacep.com.br/ws/${cep}/json`
+    const API = `https://viacep.com.br/ws/${cep}/json`;
 
     fetch(API)
         .then((res) => {
             if (!res.ok) {
-                throw new Error(`Erro na requisição: ${res.status}`)
+                throw new Error(`Erro na requisição: ${res.status}`);
             }
-            return res.jason();
+            return res.json();
         })
         .then((data) => {
             const { localidade, bairro, logradouro } = data;
 
-            dadosUsuarioCep.localidaede = localidade;
+            dadosUsuarioCep.localidade = localidade;
             dadosUsuarioCep.bairro = bairro;
             dadosUsuarioCep.logradouro = logradouro;
 
             resumoCep.innerHTML = `
-        <p class="cidade">${localidade}</p>
-        <p class="bairro">${bairro}</p>
-        <p class="rua">${logradouro} <span class="numero"><input class="input-style pequeno" placeholder=:"Nº" type="number" id="numero"></span></p>
-        <textarea name="" id="complemento" cols="30" rows="4" placeholder="Complemento"></textarea>
-        `;
+                <p class="cidade">${localidade}</p>
+                <p class="bairro">${bairro}</p>
+                <p class="rua">${logradouro} <span class="numero">
+                    <input class="input-style pequeno" placeholder="Nº" type="number" id="numero" required>
+                </span></p>
+                <textarea name="" id="complemento" cols="30" rows="4" placeholder="Complemento"></textarea>
+            `;
 
-            document
-                .querySelector("#numero")
-                .addEventListener("input", pegarNumeroCasa);
+            document.querySelector("#numero").addEventListener("input", pegarNumeroCasa);
+            document.querySelector("#complemento").addEventListener('input', pegarComplemento);
 
-            document
-                .querySelector("#complemento")
-                .addEventListener('input', pegarComplemento);
+            // Verificação de campos obrigatórios ao inserir os dados
+            if (!dadosUsuarioCep.numero || !dadosUsuarioCep.complemento) {
+                alert("Por favor, preencha o número e o complemento para continuar.");
+            }
         })
         .catch((error) => {
             console.error(error);
@@ -63,33 +67,35 @@ const pegarComplemento = (event) => {
 };
 
 // Finalizando o pedido, imprimindo um alert e falta encaminhar para o wpp
-let bolsas = []
-let quantidades = []
+
+
+
 
 const finalizarPedido = () => {
     let totalCompra = valorCompra + frete;
 
-    if (dadosUsuariosCep.numero == 0) {
-        alert("Preencha todos os campos!")
+    // Verificação dos campos obrigatórios
+    if (!dadosUsuarioCep.numero || !dadosUsuarioCep.complemento) {
+        alert("Preencha o número e o complemento do endereço.");
     } else if (valorCompra == 0) {
         alert("Nenhum item no carrinho");
     } else {
-        const pegandoBolsas = document.querySelectorAll('.card-produto')
+        const pegandoBolsas = document.querySelectorAll('.card-produto');
         for (var i = 0; i < pegandoBolsas.length; i++) {
-            const bolsa = pegandoBolsas[i].querySelector('.opcao-produto').innerHTML
-            const quantidade = pegandoMarmitas[i].querySelector('.quantidade-produto').value
-            quantidades.push(quantidade)
-            marmitas.push(marmita)
+            const bolsa = pegandoBolsas[i].querySelector('.opcao-produto').innerHTML;
+            const quantidade = pegandoBolsas[i].querySelector('.quantidade-produto').value;
+            quantidades.push(quantidade);
+            bolsas.push(bolsa);
         }
 
-        // crie um array que combina bolsas e quantidades
-        const bolsasComQuantidades = []
-        for (let i = 0; i < marmitas.leght; i++) {
-            bolsasComQuantidades.push(`${marmitas[i]} x ${quantidades[i]}`)
+        // Criação do array de bolsas com quantidades
+        const bolsasComQuantidades = [];
+        for (let i = 0; i < bolsas.length; i++) {
+            bolsasComQuantidades.push(`${bolsas[i]} x ${quantidades[i]}`);
         }
 
         const bolsasFormatadas = bolsasComQuantidades.join('\n');
-        const mensagemWhatsapp = `
+        const mensagemWhatsApp = `
          *Pedido Finalizado com Sucesso!*
          ========================================
          _Cidade:_ ${dadosUsuarioCep.localidade}
@@ -106,13 +112,13 @@ const finalizarPedido = () => {
          Volte sempre :)
         `;
 
-        const numeroWhatsapp = '5511974490790';
-        const mensagemCodificada = encodeURIComponent(mensagemWhatsapp);
+        const numeroWhatsApp = '5511974490790';
+        const mensagemCodificada = encodeURIComponent(mensagemWhatsApp);
 
         // Construir o link do Whatsapp
-        const linkWhatsapp = `https://wa.me//${numeroWhatsApp}?text=${mensagemCodificada}`;
+        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
         // Redirecionar para o link do whatsapp
-        window.location.href = linkWhatsapp;
+        window.location.href = linkWhatsApp;
     }
 };
 
@@ -205,7 +211,7 @@ const alertaPopUp = () => {
 
     setTimeout(() => {
         popUp.classList.remove('pop-up')
-        setInterval(() => {
+        setTimeout(() => {
             popUp.remove()
 
         }, 2000);
@@ -234,7 +240,7 @@ const adicionarProdutoCarrinho = (event) => {
         ) {
             tituloProduto[i].querySelector(".quantidade-produto").value++;
             atualizarValor();
-            return;
+            return;// Evita adicionar um novo card
         }
     }
 
@@ -262,7 +268,7 @@ const adicionarProdutoCarrinho = (event) => {
       <h3>Qtd</h3>
       <div class="form">
           <input class="alterar-quantidade-produto mais" type="button" value="+">
-          <input class="quantidade-produto" type="number" name="quantidade" value="1" disabled>
+          <input class="quantidade-produto" type="number" name="quantidade" value="1">
           <input class="alterar-quantidade-produto menos" type="button" value="-">
       </div>
     </div>
@@ -275,7 +281,7 @@ const adicionarProdutoCarrinho = (event) => {
     </div>
     `;
 
-    let modalConteudo = document.querySelector(".modal-off main .conteudo");
+    let modalConteudo = document.querySelector("main .produtos .conteudo");
     modalConteudo.appendChild(novoProduto);
 
     novoProduto
